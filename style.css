@@ -5,11 +5,25 @@
 }
 
 body, html{
-width: 100vw;
-height: 100vh;
-overflow: hidden;
-background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fff;
 }
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+/*EXERCICE*/
+header img{
+    padding: 10px;
+    height: 130px;
+    width: auto;
+}
+/*EXERCICE*/
 
 .mode-tog{
     background-color: black;
@@ -69,27 +83,33 @@ h1{
     top: 40%;
     transform: translateX(-50%);
 }
+
+/*EXERCICE*/
+.text{
+    color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%); 
+}   
+/*EXERCICE*/
+
 footer{
     position: fixed;
     bottom: 0;
     width: 100%;
     color: #fff;
-    background-color: grey;
+    background-color: rgb(0, 0, 0);
 }
+
 footer p{
     padding: 20px;
     text-align: center;
+    font-size: 24px;
+
 }
-header{
-    position: fixed;
-    top: 0;
-    color: #fff;
-}
-header img{
-    padding: 10px;
-    height: 130px;
-    width: auto;
-}
+
 @media screen and (max-width: 600px) {
     .dark-mode{
         width: 250vh;
