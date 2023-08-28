@@ -69,7 +69,27 @@ h1{
     top: 40%;
     transform: translateX(-50%);
 }
-
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    background-color: grey;
+}
+footer p{
+    padding: 20px;
+    text-align: center;
+}
+header{
+    position: fixed;
+    top: 0;
+    color: #fff;
+}
+header img{
+    padding: 10px;
+    height: 130px;
+    width: auto;
+}
 @media screen and (max-width: 600px) {
     .dark-mode{
         width: 250vh;
